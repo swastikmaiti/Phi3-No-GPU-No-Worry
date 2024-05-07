@@ -3,7 +3,7 @@ import numpy as np
 
 model = None
 
-def parese_doc(doc):
+def parese_doc(doc,first_section,ignore_after):
     documents_1 = ''
 
     reader = doc
@@ -11,6 +11,11 @@ def parese_doc(doc):
         documents_1 += page.extract_text()
     
     cleaned_string = documents_1.replace('\n', ' ')
+
+    start_index = cleaned_string.find(first_section)
+    end_index = cleaned_string.rindex(ignore_after)
+    cleaned_string = cleaned_string[start_index:end_index]
+
     sentence_list = cleaned_string.split('. ')
     context_list = []
     group_size = 20
