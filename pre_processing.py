@@ -2,6 +2,7 @@ import faiss
 import numpy as np
 
 model = None
+CONTEXT = None
 
 def parese_doc(doc,first_section,ignore_after):
     documents_1 = ''
