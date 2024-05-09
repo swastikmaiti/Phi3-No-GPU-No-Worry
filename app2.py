@@ -26,7 +26,6 @@ model = og.Model(model_path)
 tokenizer = og.Tokenizer(model)
 tokenizer_stream = tokenizer.create_stream()
 
-
 def doc_processing(uploaded_pdf):
     first_section = "Abstract"
     ignore_after = "References"
@@ -34,7 +33,6 @@ def doc_processing(uploaded_pdf):
     context_list = pre_processing.parese_doc(reader,first_section,ignore_after)
     pre_processing.create_embedding(context_list)
     pre_processing.CONTEXT = context_list
-)
 
 def response_generator(history):
     context_list = pre_processing.CONTEXT
@@ -58,6 +56,7 @@ def response_generator(history):
     
 
     prompt = f'{chat_template.format(input=text)}'
+    print("prompt: ",prompt)
 
     input_tokens = tokenizer.encode(prompt)
 
@@ -68,6 +67,9 @@ def response_generator(history):
     generator = og.Generator(model, params)
     
     history[-1][1] = ""
+    del context_list
+    del context
+    del index
     while not generator.is_done():
         generator.compute_logits()
         generator.generate_next_token()
@@ -105,4 +107,4 @@ with gr.Blocks() as demo:
         
     
 demo.queue()
-demo.launch()
+demo.launch(share=True,state_session_capacity=1)
