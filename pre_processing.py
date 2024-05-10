@@ -1,9 +1,3 @@
-import faiss
-import numpy as np
-
-model = None
-CONTEXT = None
-
 def parese_doc(doc,first_section,ignore_after):
     documents_1 = ''
 
@@ -33,15 +27,15 @@ def parese_doc(doc,first_section,ignore_after):
 
 def get_embeddings(doc):
     model_input = doc
-    out =  model.encode(model_input)
+    out =  embedding_model.encode(model_input)
     return out
 
 def create_embedding(context_list):
-    embedding_dimension = model.get_sentence_embedding_dimension()
+    embedding_dimension = embedding_model.get_sentence_embedding_dimension()
     embeddings = list(map(get_embeddings,context_list))
     embeddings_array = np.array(embeddings)
     
     index = faiss.IndexFlatL2(embedding_dimension)
     index.add(embeddings_array)
-    faiss.write_index(index, 'doc.index')
+    return index
     
