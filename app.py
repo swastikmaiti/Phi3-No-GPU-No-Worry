@@ -124,8 +124,8 @@ with gr.Blocks() as demo:
         upload_button = gr.UploadButton("📁 Upload PDF", file_types=[".pdf"])
     error_box = gr.Textbox(label="Error", visible=False)
 
-    input_box = gr.Textbox(autoscroll=True,visible=False)
-    output_box = gr.Textbox(autoscroll=True,max_lines=30)
+    input_box = gr.Textbox(autoscroll=True,visible=False,label='User')
+    output_box = gr.Textbox(autoscroll=True,max_lines=30,value="Output",label='Assistant')
     gr.Interface(fn=response_generator, inputs=[input_box,state_var], outputs=[output_box,state_var],delete_cache=(20,10))
 
     upload_button.upload(doc_processing,inputs=[upload_button,state_var],outputs=[input_box,state_var],queue=False,show_progress=True,trigger_mode="once")
