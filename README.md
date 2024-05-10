@@ -22,5 +22,5 @@ The model uses int4 quantization via RTN.
 - Gradio😍🚀
 
 #NB
-Cloning this repository won't work. The work has been created on Linux Cloud Enveionment using Github Codespace. The model files are missing in this repositry due to large size.
+Cloning this repository won't work. The work has been created on Linux Cloud Enveionment using Github Codespace. The model files are missing in this repository due to large size.
 The model can be easily setup following the instruction from hosted model from `Microsoft` on [HuggingFace](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct-onnx)
