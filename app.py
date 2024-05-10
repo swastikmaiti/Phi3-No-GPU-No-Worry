@@ -35,6 +35,7 @@ def parese_doc(doc,first_section,ignore_after):
         documents_1 += page.extract_text()
     
     cleaned_string = documents_1.replace('\n', ' ')
+    cleaned_string = cleaned_string.lower()
 
     start_index = cleaned_string.find(first_section)
     end_index = cleaned_string.rindex(ignore_after)
@@ -69,8 +70,8 @@ def create_embedding(context_list):
     return index
 
 def doc_processing(uploaded_pdf,var1):
-    first_section = "Abstract"
-    ignore_after = "References"
+    first_section = "abstract"
+    ignore_after = "references"
     reader = PdfReader(uploaded_pdf)
     context_list = parese_doc(reader,first_section,ignore_after)
     index = create_embedding(context_list)
