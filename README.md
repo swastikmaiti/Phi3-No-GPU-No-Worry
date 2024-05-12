@@ -24,3 +24,6 @@ The model uses int4 quantization via RTN.
 #NB
 Cloning this repository won't work. The work has been created on Linux Cloud Enveionment using Github Codespace. The model files are missing in this repository due to large size.
 The model can be easily setup following the instructions on hosted model card from `Microsoft` on [HuggingFace](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct-onnx)
+
+# Model Card Author
+Swastik Maiti
