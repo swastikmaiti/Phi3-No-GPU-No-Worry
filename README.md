@@ -25,7 +25,7 @@ The model uses int4 quantization via RTN.
 Cloning this repository won't work. The work has been created on Linux Cloud Enveionment using Github Codespace. The model files are missing in this repository due to large size.
 The model can be easily setup following the instructions on hosted model card from `Microsoft` on [HuggingFace](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct-onnx)
 
-The commands to setup model in Linux CPU environment is present in `Makefile`. Run `make phi3_dependecy` in CLI after installing librariries in requirements.txt
+The commands to setup model in Linux CPU environment is present in `Makefile`. Run `make phi3_dependency` in CLI after installing librariries in requirements.txt
 
 # Model Card Author
 Swastik Maiti
