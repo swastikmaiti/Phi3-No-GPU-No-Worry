@@ -18,6 +18,10 @@ The ONXX model used here is uses ONXX Runtime for Inference. The model run effic
 # Quantization
 The model uses int4 quantization via RTN.
 
+# Acknowledgement
+- `Microsoft` for the open source Phi3 Model and support for Qunatization along with ONXX Runtime
+- `Hugging Face` for the all the edicational and open source resources.
+
 # App
 - Gradio😍🚀
 
