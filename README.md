@@ -26,3 +26,6 @@ In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU run
 # Acknowledgement
 - `Microsoft` for the open source Phi3 Mini Quantized along with ONXX Runtime support.
 - `Hugging Face` for the all the educational and open source resources.
+
+#
+### If you find the repo helpful, please drop a ⭐
