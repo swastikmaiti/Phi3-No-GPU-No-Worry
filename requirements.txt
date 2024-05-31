@@ -1,0 +1,7 @@
+faiss-cpu==1.8.0
+sentence-transformers==2.7.0
+einops==0.8.0
+pypdf==4.2.0
+gradio==4.29.0
+numpy
+onnxruntime-genai --pre
