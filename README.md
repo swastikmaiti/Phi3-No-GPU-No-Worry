@@ -1,6 +1,6 @@
 # RAG-System with Microsoft Phi3 Mini
 
-In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU runtime. We build a PDF Q/A system with `mixedbread-ai/mxbai-embed-large-v1` as embedding moel 
+In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU runtime. We build a PDF Q/A system with `nomic-embed-text-v1` as embedding moel 
 `faiss` as Vector DB.
 
 # File Structures
@@ -10,7 +10,7 @@ In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU run
 
 # Frameworks
 - **LLM:** Phi3 Mini
-- **Embedding Model:** mixedbread-ai/mxbai-embed-large-v1
+- **Embedding Model:** nomic-embed-text-v1
 - **Vector DB:** faiss
 - **Application:** Gradio
 
