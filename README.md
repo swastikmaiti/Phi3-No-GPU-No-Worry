@@ -10,7 +10,7 @@ In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU run
 # File Structures
 - ***pre_processing.py:*** Contains code for parsing PDF file, creating Embedding and Vector DB.
 - ***application.ipynb:*** This notebook for creating a pdf Q/A pipeline.
-- ***app.py:*** Code for Gradio Application. The app is hosted on [`HF Space`](https://huggingface.co/spaces/SwastikM/RA)
+- ***app.py:*** Code for Gradio Application. The app is hosted on [`HF Space`](https://huggingface.co/spaces/SwastikM/Phi3-Mini-ONXX)
 
 # Frameworks
 - **LLM:** Phi3 Mini
