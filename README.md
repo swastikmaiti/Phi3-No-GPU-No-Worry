@@ -3,6 +3,10 @@
 In this work we harness the power of Microsoft `Phi3 Mini 3.8` on `ONXX` CPU runtime. We build a PDF Q/A system with `nomic-embed-text-v1` as embedding moel 
 `faiss` as Vector DB.
 
+#
+
+<img src="https://github.com/swastikmaiti/digital_research_guide/blob/a458495c7620b0af1a86104e774d0f9f03b459e9/phi3-mini-onxx.png">
+
 # File Structures
 - ***pre_processing.py:*** Contains code for parsing PDF file, creating Embedding and Vector DB.
 - ***application.ipynb:*** This notebook for creating a pdf Q/A pipeline.
